@@ -1,0 +1,52 @@
+:root{
+    --overlay: rgba(23,25,29,0.5);
+}
+
+body { 
+    background: url(https://leeseunghyeon-1.github.io/A/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: scroll;
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content {
+    position: fixed;
+    text-align: center;
+    margin-top: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+  }
+.bnt { display: block; width: 200px; height: 50px; columns: #afe7fd;;
+text-decoration: none; text-align: center; line-height: 30px; color:#fff;
+border-radius: 50px;}
+
+
+
+.popup { position: absolute; left: 50%; top: 50%; z-index: 5; transform-origin: center; transform: 
+translate(-50%,-50%); box-shadow: 0 0 10px 
+rgba(0,0,0,0,50); background: #fff; border-radius: 5px; text-align: right;
+padding: 20px; box-sizing: border-box; opacity: 0; transition: all 0.7s;
+
+}
+
+.popup a { color: gray; text-align: center;  text-decoration: none;}
+
+.popup:target {opacity: 1;}
+
+.popup:target + .dim {opacity: 1; z-index: 2;}
+iframe{
+    grid-area: iframe;
+    display: grid;
+
+    overflow: scroll;
+}
